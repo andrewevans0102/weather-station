@@ -53,6 +53,18 @@ In order to interact with Firebase's Firestore Database, I created an API that y
 
 To learn more about this I recommend reading my post [Building an API with Firebase](https://rhythmandbinary.com/post/Building_an_API_with_Firebase).
 
+## Project Setup
+
+If you want to run this for your own setup, you'll need to do a few things to get everything in order first.
+
+1. Create a Firebase account and deploy the serverless API within the `functions` folder (see [Building an API with Firebase](https://rhythmandbinary.com/post/Building_an_API_with_Firebase))
+2. Modify the `noaa_endpoint` variable in the `sensors/noaa.py` Python Script to be the hosted endpoint for the Firebase Function `/api/noaa` route
+3. Modify the `weather_endpoint` variable in the `sensors/weather.py` Python Script to be the hosted endpoint for the Firebase Function `/api/weather` route
+4. Modify the `results_endpoint` variable in the `src/App.js` file to be the hosted endpoint for the Firebase Function `/api/results` route
+5. Push the Python scripts in the `sensors` folder to a Raspberry Pi that is hooked up to a DHT11 sensor and run them with cronjobs (`noaa.py` every 12 hours, `weather.py` every 4 hours)
+6. Push this project to a Raspberry Pi that is hooked up to an HDMI monitor and has Node installed and then run the `start.sh` shell script that is in the project root
+7. Go to `localhost:1122` on the Raspberry Pi hooked up to an HDMI monitor and you're all setup!
+
 ## Helpful Links
 
 I found the following very helpful when building this project:
