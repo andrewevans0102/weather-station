@@ -12,7 +12,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "moment": "^2.26.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "path": "^0.12.7",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
