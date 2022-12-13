@@ -9,7 +9,7 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "moment": "^2.26.0",
     "node-sass": "^4.14.1",
